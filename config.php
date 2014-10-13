@@ -16,8 +16,8 @@ $svnadmin_cmd 				= 	"/usr/bin/svnadmin";
 //Subversion locations
 $svn_config_dir				=	"/var/svn/svnconfig";
 $svn_repos_loc 				= 	"/var/svn/repos";
-$svn_passwd_file 			= 	"/var/svn/repos/passwdfile";
-$svn_access_file 			= 	"/var/svn/repos/accessfile";
+$svn_passwd_file 			= 	"/var/svn/svnconfig/passwdfile";
+$svn_access_file 			= 	"/var/svn/svnconfig/accessfile";
 
 //If the following is set, removing a repository will cause it to be
 //moved to this location rather than being deleted.
@@ -34,7 +34,7 @@ $svn_trash_loc				=	"/var/svn/trash";
 //  	 the svnserve user file.
 //
 //$svnserve_user_file		=	"/var/www/repos/svnserve_passwd_file"; 
-$svnserve_user_file="";
+$svnserve_user_file="/var/svn/svnconfig/svnserve_passwd_file";
 
 //SMTP Server for outgoing mail
 $smtp_server 			= 	"mail.unityappstudio.com";
